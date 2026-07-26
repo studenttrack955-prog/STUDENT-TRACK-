@@ -1,0 +1,6 @@
+{
+  "name": "Student Track",
+  "description": "The Ultimate AI Learning, Exam Preparation & Career Platform for students. Features AI assistant, smart notes, exam generator, and personalized learning analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
