@@ -15,6 +15,7 @@ import {
   Trophy
 } from 'lucide-react';
 import { Button } from '../components/UI';
+import { ShareButton } from '../components/ShareButton';
 import { useAuth } from '../context/AuthContext';
 
 export default function LandingPage() {
@@ -68,6 +69,7 @@ export default function LandingPage() {
             <a href="#features" className="text-sm font-medium text-slate-600 hover:text-pink-600 transition-colors">Features</a>
             <a href="#testimonials" className="text-sm font-medium text-slate-600 hover:text-pink-600 transition-colors">Testimonials</a>
             <a href="#pricing" className="text-sm font-medium text-slate-600 hover:text-pink-600 transition-colors">Pricing</a>
+            <ShareButton variant="ghost" />
             <Button variant="primary" onClick={signInWithGoogle}>Get Started Free</Button>
           </div>
         </div>
@@ -115,6 +117,7 @@ export default function LandingPage() {
             <Button variant="secondary" size="lg" className="px-8 py-4 text-lg rounded-xl">
               Explore Demo
             </Button>
+            <ShareButton size="lg" className="px-8 py-4 text-lg rounded-xl" />
           </motion.div>
         </div>
 

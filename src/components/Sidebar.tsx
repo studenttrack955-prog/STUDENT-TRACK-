@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { cn } from '../lib/utils';
+import { ShareButton } from './ShareButton';
 
 export const Sidebar = () => {
   const { logout, profile } = useAuth();
@@ -81,6 +82,8 @@ export const Sidebar = () => {
           <User className="w-5 h-5" />
           Profile
         </NavLink>
+
+        <ShareButton variant="ghost" className="w-full justify-start px-3 py-2 mb-1 text-slate-600 hover:bg-slate-50" />
 
         <button
           onClick={logout}
